@@ -1,4 +1,4 @@
-# Melody Extraction
+# Audio Melody Extraction
 This repository contains the code for a project on Melody Extraction for the Music Information Retrieval course from the master
 in Sound and Music Computing at UPF (Barcelona). It is maintained by Joe Munday (joseph.munday01@estudiant.upf.edu) 
 and Helena Cuesta (helena.cuesta01@estudiant.upf.edu). Feel free to contact us for any query/doubt/comment.
