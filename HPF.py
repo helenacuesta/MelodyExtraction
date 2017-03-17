@@ -120,12 +120,12 @@ def mirEval(refPath, estPath, pathJson):
 #======================================================================
 
 
-# audioPath = '/Volumes/HCM2T/SMC/MedleyDB/Audio/MIX/'
+
 refPath = '../Orchset/GT_csv/'
-predPath = './ParameterTunedResults/'
+predPath = './filteringtest_orchset/'
 # 
-# melody_extraction_melodia(audioPath,predPath)
-pathJson = predPath+'evaluation/' # export results path
+melody_extraction_melodia(audioPath,predPath)
+pathJson = predPath+'jsonResults/' # export results path
 mirEval(refPath,predPath,pathJson)
 averageResults.main(pathJson)
 
