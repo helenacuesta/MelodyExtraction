@@ -22,7 +22,6 @@ def HPFilter(audio,cutoff):
 
 
 
-
 def melody_extraction_melodia(audioPath,exportPath):
 
 	listOfFiles = os.listdir(audioPath)
@@ -120,11 +119,13 @@ def mirEval(refPath, estPath, pathJson):
 
 #======================================================================
 
-audioPath = '../Orchset/audio/mono/'
+
+# audioPath = '/Volumes/HCM2T/SMC/MedleyDB/Audio/MIX/'
 refPath = '../Orchset/GT_csv/'
-predPath = './filteringtest/'
-melody_extraction_melodia(audioPath,predPath)
-pathJson = predPath+'jsonResults/' # export results path
+predPath = './ParameterTunedResults/'
+# 
+# melody_extraction_melodia(audioPath,predPath)
+pathJson = predPath+'evaluation/' # export results path
 mirEval(refPath,predPath,pathJson)
 averageResults.main(pathJson)
 
